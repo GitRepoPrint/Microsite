@@ -2,6 +2,8 @@
 id: team
 title: Equipa do Projeto
 sidebar_label: Equipa
+hide_table_of_contents: true
+displayed_sidebar: null
 ---
 
 ## Elementos da Equipa
