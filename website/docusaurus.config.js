@@ -83,24 +83,22 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'RepoPrint',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+      title: 'RepoPrint',
+      logo: {
+        alt: 'Logo RepoPrint',
+        src: 'img/logo.svg',
+      },
+      items: [
+        { to: '/', label: 'Home', position: 'left' },
+        { to: '/docs/milestones', label: 'Milestones', position: 'left' },
+        { to: '/docs/calendar', label: 'Calendar', position: 'left' },
+        { to: '/docs/minutes', label: 'Minutes', position: 'left' },
+        { to: '/docs/team', label: 'About Us', position: 'left' },
+        {
+          href: 'https://code.ua.pt/',
+          label: 'CodeUA',
+          position: 'right',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/GitRepoPrint',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
