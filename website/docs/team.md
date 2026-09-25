@@ -23,7 +23,7 @@ We are a group of students from University of Aveiro. Passionate about software 
 ## Our Advisors
 
 <MemberGrid>
-  <Member name="João Almeida" email="joao.rafael.almeida@ua.pt" role="Advisor" image="/img/team/joao.png" linkedin="https://linkedin.com/in/" />
-  <Member name="Raquel Paradinha" email="" role="Advisor" image="/img/team/raquel.png" linkedin="https://linkedin.com/in/" />
-  <Member name="José Gameiro" email="" role="Advisor" image="/img/team/jose.png" linkedin="https://linkedin.com/in/" />
+  <Member name="João Almeida" email="joao.rafael.almeida@ua.pt" role="Advisor" image="/img/team/joao.jpeg" />
+  <Member name="Raquel Paradinha" email="" role="Advisor" image="/img/team/raquel.jpeg"/>
+  <Member name="José Gameiro" email="" role="Advisor" image="/img/team/jose.jpeg" />
 </MemberGrid>
