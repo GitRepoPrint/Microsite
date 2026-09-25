@@ -28,3 +28,47 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+/* Ajusta o alinhamento da navbar para puxar o logótipo para o extremo esquerdo */
+.navbar__inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: left;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.navbar__brand {
+  grid-column: 1;
+  justify-self: start;
+  margin-right: 0;
+}
+
+.navbar__items:not(.navbar__items--right) {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__items--right {
+  grid-column: 3;
+  display: flex;
+  justify-self: end;
+}
+
+/* Centraliza títulos e parágrafos de páginas sem sidebar */
+article header h1,
+article .markdown > h1,
+article .markdown > h2,
+article .markdown > p {
+  text-align: center;
+}
+
+article .markdown > p {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}

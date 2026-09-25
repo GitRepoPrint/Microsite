@@ -95,57 +95,61 @@ const config = {
         { to: '/docs/minutes', label: 'Minutes', position: 'left' },
         { to: '/docs/team', label: 'About Us', position: 'left' },
         {
-          href: 'https://code.ua.pt/',
-          label: 'CodeUA',
+          href: 'https://github.com/GitRepoPrint',
+          label: 'GitHub',
           position: 'right',
         },
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+      style: 'dark',
+      links: [
+        {
+          title: 'Documentação',
+          items: [
+            {
+              label: 'Milestones',
+              to: '/docs/milestones',
+            },
+            {
+              label: 'Calendar',
+              to: '/docs/calendar',
+            },
+            {
+              label: 'About Us',
+              to: '/team',
+            },
+          ],
+        },
+        {
+          title: 'Projeto',
+          items: [
+            {
+              label: 'Universidade de Aveiro',
+              href: 'https://www.ua.pt/',
+            },
+            {
+              label: 'DETI',
+              href: 'https://www.ua.pt/deti/',
+            },
+          ],
+        },
+        {
+          title: 'Código',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/',
+            },
+            {
+              label: 'CodeUA',
+              href: 'https://code.ua.pt/',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} RepoPrint - PEI, DETI Universidade de Aveiro.`,
+    },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

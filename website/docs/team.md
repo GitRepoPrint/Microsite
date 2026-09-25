@@ -1,78 +1,29 @@
 ---
 id: team
-title: Equipa do Projeto
-sidebar_label: Equipa
+title: About Us
+sidebar_label: About Us
 hide_table_of_contents: true
 displayed_sidebar: null
 ---
 
-## Elementos da Equipa
+import { MemberGrid, Member } from '@site/src/components/TeamMember';
 
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'center', margin: '2rem 0' }}>
+We are a group of students from University of Aveiro. Passionate about software engineering and security, our goal is to improve Git repository analysis and auditing with RepoPrint.
 
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/margarida.png" alt="Margarida Cardoso" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>Margarida Cardoso</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>Team Manager</p>
-    <p style={{ margin: '0.2rem 0', fontSize: '0.9rem', color: '#666' }}>NMec: 12347</p>
-    <a href="mailto:cardoso.margarida@ua.pt" style={{ fontSize: '0.85rem' }}>cardoso.margarida@ua.pt</a>
-  </div>
+## Our Team
 
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/gil.png" alt="Gil Ernesto" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>Gil Ernesto</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>Architect</p>
-    <p style={{ margin: '0.2rem 0', fontSize: '0.9rem', color: '#666' }}>NMec: 12345</p>
-    <a href="mailto:email1@ua.pt" style={{ fontSize: '0.85rem' }}>email1@ua.pt</a>
-  </div>
+<MemberGrid>
+  <Member name="Margarida Cardoso" email="cardoso.margarida@ua.pt" role="Team Manager" image="/img/team/margarida.jpeg" github="https://github.com" linkedin="www.linkedin.com/in/margarida-almeida-cardoso" />
+  <Member name="Gil Ernesto" email="gilernesto@ua.pt" role="Architect" image="/img/team/gil.jpeg" github="https://github.com/GilErnesto" linkedin="https://www.linkedin.com/in/gil-guedes?utm_source=share_via&utm_content=profile&utm_medium=member_android" />
+  <Member name="Tiago Costa" email="tiagofccosta@ua.pt" role="DevOps Master" image="/img/team/tiago.jpeg" github="https://github.com/tiagofcc" linkedin="https://linkedin.com/in/" />
+  <Member name="Nuno Costa" email="nunoc27@ua.pt" role="Architect" image="/img/team/nuno.jpeg" github="https://github.com/NunoC0sta" linkedin="https://www.linkedin.com/in/nuno-costa-952849312?utm_source=share_via&utm_content=profile&utm_medium=member_android" />
+  <Member name="Artur Yaski" email="email3@ua.pt" role="Product Owner" image="/img/team/artur.png" github="https://github.com" linkedin="https://linkedin.com/in/" />
+</MemberGrid>
 
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/tiago.jpeg" alt="Tiago Costa" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>Tiago Costa</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>DevOps Master</p>
-    <p style={{ margin: '0.2rem 0', fontSize: '0.9rem', color: '#666' }}>NMec: 12346</p>
-    <a href="mailto:email2@ua.pt" style={{ fontSize: '0.85rem' }}>email2@ua.pt</a>
-  </div>
+## Our Advisors
 
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/nuno.jpeg" alt="Nuno Nuno" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>Nuno Nuno</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>Architect</p>
-    <p style={{ margin: '0.2rem 0', fontSize: '0.9rem', color: '#666' }}>NMec: 12347</p>
-    <a href="mailto:email3@ua.pt" style={{ fontSize: '0.85rem' }}>email3@ua.pt</a>
-  </div>
-
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/artur.png" alt="Artur Yaski" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>Artur Yaski</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>Product Owner</p>
-    <p style={{ margin: '0.2rem 0', fontSize: '0.9rem', color: '#666' }}>NMec: 12347</p>
-    <a href="mailto:email3@ua.pt" style={{ fontSize: '0.85rem' }}>email3@ua.pt</a>
-  </div>
-
-</div>
-
-## Orientadores
-
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', textAlign: 'center', margin: '2rem 0' }}>
-
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/joao.png" alt="João Almeida" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>João Almeida</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>Orientador</p>
-    <a href="mailto:joao.rafael.almeida@ua.pt" style={{ fontSize: '0.85rem' }}>joao.rafael.almeida@ua.pt</a>
-  </div>
-
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/raquel.png" alt="Raquel Paradinha" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>Raquel Paradinha</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>Orientadora</p>
-  </div>
-
-  <div style={{ border: '1px solid #e0e0e0', borderRadius: '8px', padding: '1.5rem' }}>
-    <img src="/img/team/jose.png" alt="José Gameiro" style={{ width: '130px', height: '130px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem' }} />
-    <h3 style={{ margin: '0.5rem 0' }}>José Gameiro</h3>
-    <p style={{ margin: '0.2rem 0', fontWeight: 'bold' }}>Orientador</p>
-  </div>
-
-</div>
+<MemberGrid>
+  <Member name="João Almeida" email="joao.rafael.almeida@ua.pt" role="Advisor" image="/img/team/joao.png" linkedin="https://linkedin.com/in/" />
+  <Member name="Raquel Paradinha" email="" role="Advisor" image="/img/team/raquel.png" linkedin="https://linkedin.com/in/" />
+  <Member name="José Gameiro" email="" role="Advisor" image="/img/team/jose.png" linkedin="https://linkedin.com/in/" />
+</MemberGrid>
