@@ -107,7 +107,7 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentação',
+          title: 'Documentation',
           items: [
             {
               label: 'Milestones',
@@ -137,15 +137,11 @@ const config = {
           ],
         },
         {
-          title: 'Código',
+          title: 'Platform',
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/',
-            },
-            {
-              label: 'CodeUA',
-              href: 'https://code.ua.pt/',
+              href: 'https://github.com/GitRepoPrint/',
             },
           ],
         },
