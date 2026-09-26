@@ -3,6 +3,8 @@ import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import { hero, overview, features } from '../content/home.mdx';
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 function FeatureIcon({ type }) {
   const icons = {
     layers: <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />,
@@ -45,7 +47,7 @@ export default function Home() {
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="/img/hero-illustration.svg" alt="RepoPrint Illustration" style={{ width: '100%', maxWidth: '480px', height: 'auto' }} onError={(e) => { e.target.src = '/img/undraw_docusaurus_react.svg'; }} />
+            <img src={useBaseUrl('/img/undraw_docusaurus_react.svg')} alt="RepoPrint Illustration" style={{ width: '100%', maxWidth: '480px', height: 'auto' }} onError={(e) => { e.target.src = '/img/undraw_docusaurus_react.svg'; }} />
           </div>
         </section>
 
