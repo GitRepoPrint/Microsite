@@ -124,19 +124,6 @@ const config = {
           ],
         },
         {
-          title: 'Projeto',
-          items: [
-            {
-              label: 'Universidade de Aveiro',
-              href: 'https://www.ua.pt/',
-            },
-            {
-              label: 'DETI',
-              href: 'https://www.ua.pt/deti/',
-            },
-          ],
-        },
-        {
           title: 'Platform',
           items: [
             {
