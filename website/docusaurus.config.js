@@ -23,12 +23,13 @@ const config = {
   url: 'https://GitRepoPrint.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/RepoPrint/',
+  baseUrl: '/Microsite/',
+  
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'GitRepoPrint', // Usually your GitHub org/user name.
-  projectName: 'RepoPrint', // Usually your repo name.
+  projectName: 'Microsite', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
