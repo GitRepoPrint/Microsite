@@ -72,3 +72,11 @@ article .markdown > p {
   font-size: 1.2rem;
   line-height: 1.7;
 }
+
+.pagination-nav {
+  display: none;
+}
+
+.breadcrumbs {
+  display: none;
+}

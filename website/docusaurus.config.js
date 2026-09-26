@@ -94,7 +94,12 @@ const config = {
         { to: '/', label: 'Home', position: 'left' },
         { to: '/docs/milestones', label: 'Milestones', position: 'left' },
         { to: '/docs/calendar', label: 'Calendar', position: 'left' },
-        { to: '/docs/minutes', label: 'Minutes', position: 'left' },
+        {
+          type: 'docSidebar',
+          sidebarId: 'minutesSidebar',
+          position: 'left',
+          label: 'Minutes',
+        },
         { to: '/docs/team', label: 'About Us', position: 'left' },
         {
           href: 'https://github.com/GitRepoPrint',
