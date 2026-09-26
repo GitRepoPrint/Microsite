@@ -39,7 +39,7 @@ export default function Home() {
               <Link to="/docs/milestones" style={{ backgroundColor: '#2dd4bf', color: '#ffffff', fontWeight: '700', padding: '0.85rem 2rem', borderRadius: '30px', textDecoration: 'none' }}>
                 Get Started
               </Link>
-              <Link to="/team" style={{ border: '1.5px solid #cbd5e1', color: 'inherit', fontWeight: '600', padding: '0.85rem 2rem', borderRadius: '30px', textDecoration: 'none' }}>
+              <Link to="/docs/team" style={{ border: '1.5px solid #cbd5e1', color: 'inherit', fontWeight: '600', padding: '0.85rem 2rem', borderRadius: '30px', textDecoration: 'none' }}>
                 Learn more
               </Link>
             </div>
