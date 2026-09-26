@@ -1,35 +1,36 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 
 const teamMembers = [
   {
     name: 'Margarida Cardoso',
     role: 'Team Manager',
-    image: '/img/team/margarida.png',
+    image: 'img/team/margarida.jpeg',
     github: 'https://github.com/',
   },
   {
     name: 'Gil Ernesto',
     role: 'Architect',
-    image: '/img/team/gil.png',
+    image: 'img/team/gil.jpeg',
     github: 'https://github.com/',
   },
   {
     name: 'Tiago Costa',
     role: 'DevOps Master',
-    image: '/img/team/tiago.jpeg',
+    image: 'img/team/tiago.jpeg',
     github: 'https://github.com/',
   },
   {
     name: 'Nuno Nuno',
     role: 'Architect',
-    image: '/img/team/nuno.jpeg',
+    image: 'img/team/nuno.jpeg',
     github: 'https://github.com/',
   },
   {
     name: 'Artur Yaski',
     role: 'Product Owner',
-    image: '/img/team/artur.png',
+    image: 'img/team/artur.png',
     github: 'https://github.com/',
   },
 ];
@@ -38,19 +39,19 @@ const advisors = [
   {
     name: 'João Almeida',
     role: 'Orientador',
-    image: '/img/team/joao.png',
+    image: 'img/team/joao.jpeg',
     email: 'joao.rafael.almeida@ua.pt',
   },
   {
     name: 'Raquel Paradinha',
     role: 'Orientadora',
-    image: '/img/team/raquel.png',
+    image: 'img/team/raquel.jpeg',
     email: '',
   },
   {
     name: 'José Gameiro',
     role: 'Orientador',
-    image: '/img/team/jose.png',
+    image: 'img/team/jose.jpeg',
     email: '',
   },
 ];
@@ -59,7 +60,7 @@ function MemberCard({ name, role, image, github, email }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
       <img
-        src={image}
+        src={useBaseUrl(image)}
         alt={name}
         style={{
           width: '180px',

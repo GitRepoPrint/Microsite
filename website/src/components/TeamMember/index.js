@@ -1,4 +1,5 @@
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export function MemberGrid({ children }) {
   return (
@@ -19,7 +20,7 @@ export function Member({ name, role, email, image, github, linkedin }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <img
-        src={image}
+        src={useBaseUrl(image)}
         alt={name}
         style={{
           width: '180px',
