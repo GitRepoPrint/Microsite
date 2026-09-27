@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import { hero, overview, features } from '../content/home.mdx';
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './index.module.css';
 
 function FeatureIcon({ type }) {
   const icons = {
@@ -37,11 +38,11 @@ export default function Home() {
             <p style={{ fontSize: '1.25rem', lineHeight: '1.6', color: '#64748b', marginBottom: '2.5rem' }}>
               {hero.description}
             </p>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link to="/docs/milestones" style={{ backgroundColor: '#2dd4bf', color: '#ffffff', fontWeight: '700', padding: '0.85rem 2rem', borderRadius: '30px', textDecoration: 'none' }}>
+            <div className={styles.buttons} style={{ gap: '1rem', flexWrap: 'wrap' }}>
+              <Link to="/docs/milestones" className={styles.primaryButton}>
                 Get Started
               </Link>
-              <Link to="/docs/team" style={{ border: '1.5px solid #cbd5e1', color: 'inherit', fontWeight: '600', padding: '0.85rem 2rem', borderRadius: '30px', textDecoration: 'none' }}>
+              <Link to="/docs/team" className={styles.secondaryButton}>
                 Learn more
               </Link>
             </div>
@@ -77,7 +78,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(440px, 1fr))', gap: '3.5rem 3rem' }}>
             {features.map((feat, idx) => (
               <div key={idx} style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
-                <div style={{ backgroundColor: '#2dd4bf', color: '#ffffff', borderRadius: '50%', minWidth: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 10px rgba(45, 212, 191, 0.3)' }}>
+                <div className={styles.featureCircle}>
                   <FeatureIcon type={feat.icon} />
                 </div>
                 <div>
