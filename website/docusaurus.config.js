@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'RepoPrint',
   tagline: 'Fingerprinting Git Repositories',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -88,7 +88,7 @@ const config = {
       title: 'RepoPrint',
       logo: {
         alt: 'Logo RepoPrint',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         { to: '/', label: 'Home', position: 'left' },
