@@ -66,3 +66,7 @@
   fill: #ffffff !important;
   color: #ffffff !important;
 }
+
+.heroTagline {
+  color: var(--ifm-color-primary-darkest, #5c35a1);
+}

@@ -29,7 +29,7 @@ export default function Home() {
         {/* Hero */}
         <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '4rem 2rem 5rem 2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', alignItems: 'center', gap: '3rem' }}>
           <div>
-            <span style={{ color: '#3b82f6', fontWeight: '700', fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
+            <span className={styles.heroTagline} style={{ fontWeight: '700', fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
               {hero.tagline}
             </span>
             <h1 style={{ fontSize: '3.6rem', fontWeight: '900', lineHeight: '1.15', margin: '1rem 0 1.5rem 0', color: 'var(--ifm-heading-color)' }}>
