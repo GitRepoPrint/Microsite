@@ -70,3 +70,11 @@
 .heroTagline {
   color: var(--ifm-color-primary-darkest, #5c35a1);
 }
+
+.heroImage {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

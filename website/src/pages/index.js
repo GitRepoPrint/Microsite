@@ -48,7 +48,7 @@ export default function Home() {
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src={useBaseUrl('/img/undraw_docusaurus_react.svg')} alt="RepoPrint Illustration" style={{ width: '100%', maxWidth: '480px', height: 'auto' }} onError={(e) => { e.target.src = '/img/undraw_docusaurus_react.svg'; }} />
+            <img src={useBaseUrl('/img/logo.png')} alt="RepoPrint Logo" className={styles.heroImage} onError={(e) => { e.target.src = '/img/logo.png'; }} />
           </div>
         </section>
 
