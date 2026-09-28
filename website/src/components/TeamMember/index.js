@@ -4,11 +4,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 export function MemberGrid({ children }) {
   return (
     <div style={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-      gap: '3rem',
+      display: 'flex',
+      flexWrap: 'wrap',
       justifyContent: 'center',
-      margin: '2.5rem 0 4rem 0',
+      alignItems: 'flex-start',
+      gap: '2rem 2.5rem',
+      maxWidth: '980px',
+      margin: '2.5rem auto 4rem',
       textAlign: 'center'
     }}>
       {children}
@@ -18,7 +20,14 @@ export function MemberGrid({ children }) {
 
 export function Member({ name, role, email, image, github, linkedin }) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      flex: '0 0 calc(33.333% - 2.5rem)',
+      minWidth: '200px',
+      maxWidth: '260px'
+    }}>
       <img
         src={useBaseUrl(image)}
         alt={name}
