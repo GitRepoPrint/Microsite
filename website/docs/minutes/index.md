@@ -25,6 +25,18 @@ import Link from '@docusaurus/Link';
         }}>
         📑 Minute 01 - 23/09
       </Link>
+      <Link
+        to="/docs/minutes/advisors/minute-03"
+        style={{
+          border: '1.5px solid var(--ifm-color-primary)',
+          borderRadius: '8px',
+          padding: '0.85rem 1rem',
+          textDecoration: 'none',
+          fontWeight: '600',
+          display: 'block'
+        }}>
+        📑 Minute 03 - 28/09
+      </Link>
     </div>
   </div>
 

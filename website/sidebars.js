@@ -15,6 +15,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'minutes/advisors/minute-01',
+        'minutes/advisors/minute-03',
       ],
     },
     {

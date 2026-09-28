@@ -7,7 +7,8 @@ sidebar_label: Minute 01 - 23/09
 # Minute 01
 
 - **Date:** 23/09/2026
-- **Time:** 15h30
+- **Start:** 15h30
+- **End:** 16h30
 - **Location:** IEETA
 
 ## Participants
@@ -41,7 +42,7 @@ Clarify doubts related to the RepoPrint proposal, organise recurring meetings, a
 - The team will explore UML and DFD representations for data architecture and threat analysis.
 - Weekly meetings with advisors set for Wednesdays at 15h30.
 
-## Next meeting with advisors
+## Next meeting
 - **Date:** Monday, 28/09/2026
 - **Time:** 14h00
 - **Purpose:** Rehearsal and preparation of the presentation

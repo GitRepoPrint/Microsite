@@ -7,7 +7,8 @@ sidebar_label: Minute 02 - 24/09
 # Minute 02
 
 - **Date:** 24/09/2026
-- **Time:** 14h15
+- **Start:** 14h15
+- **End:** 16h
 - **Location:** Maker Lab
 
 ## Participants
