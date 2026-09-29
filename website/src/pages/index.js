@@ -40,7 +40,7 @@ export default function Home() {
                 {hero.description}
               </p>
               <div className={styles.buttons} style={{ gap: '1rem', flexWrap: 'wrap' }}>
-                <Link to="/docs/milestones" className={styles.primaryButton}>
+                <Link to="/milestones" className={styles.primaryButton}>
                   Get Started
                 </Link>
                 <Link to="/docs/team" className={styles.secondaryButton}>

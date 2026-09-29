@@ -94,7 +94,18 @@ const config = {
       },
       items: [
         { to: '/', label: 'Home', position: 'left' },
-        { to: '/docs/milestones', label: 'Milestones', position: 'left' },
+        {
+          type: 'dropdown',
+          label: 'Milestones',
+          to: '/milestones',
+          position: 'left',
+          items: [
+            { label: 'M1 - Inception', to: '/milestones/m1' },
+            { label: 'M2 - Elaboration', to: '/milestones/m2' },
+            { label: 'M3 - Construction', to: '/milestones/m3' },
+            { label: 'M4 - Construction', to: '/milestones/m4' },
+          ],
+        },
         { to: '/docs/calendar', label: 'Calendar', position: 'left' },
         {
           type: 'docSidebar',
@@ -118,7 +129,7 @@ const config = {
           items: [
             {
               label: 'Milestones',
-              to: '/docs/milestones',
+              to: '/milestones',
             },
             {
               label: 'Calendar',
