@@ -27,28 +27,30 @@ export default function Home() {
       <main style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
         
         {/* Hero */}
-        <section style={{ maxWidth: '1200px', margin: '0 auto', padding: '4rem 2rem 5rem 2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', alignItems: 'center', gap: '3rem' }}>
-          <div>
-            <span className={styles.heroTagline} style={{ fontWeight: '700', fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
-              {hero.tagline}
-            </span>
-            <h1 style={{ fontSize: '3.6rem', fontWeight: '900', lineHeight: '1.15', margin: '1rem 0 1.5rem 0', color: 'var(--ifm-heading-color)' }}>
-              {hero.title}
-            </h1>
-            <p style={{ fontSize: '1.25rem', lineHeight: '1.6', color: '#64748b', marginBottom: '2.5rem' }}>
-              {hero.description}
-            </p>
-            <div className={styles.buttons} style={{ gap: '1rem', flexWrap: 'wrap' }}>
-              <Link to="/docs/milestones" className={styles.primaryButton}>
-                Get Started
-              </Link>
-              <Link to="/docs/team" className={styles.secondaryButton}>
-                Learn more
-              </Link>
+        <section className={styles.heroBanner}>
+          <div className={styles.heroInner}>
+            <div className={styles.heroContent}>
+              <span className={styles.heroTagline} style={{ fontWeight: '700', fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
+                {hero.tagline}
+              </span>
+              <h1 className={styles.heroTitle}>
+                {hero.title}
+              </h1>
+              <p className={styles.heroDescription}>
+                {hero.description}
+              </p>
+              <div className={styles.buttons} style={{ gap: '1rem', flexWrap: 'wrap' }}>
+                <Link to="/docs/milestones" className={styles.primaryButton}>
+                  Get Started
+                </Link>
+                <Link to="/docs/team" className={styles.secondaryButton}>
+                  Learn more
+                </Link>
+              </div>
             </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src={useBaseUrl('/img/logo.png')} alt="RepoPrint Logo" className={styles.heroImage} onError={(e) => { e.target.src = '/img/logo.png'; }} />
+            <div className={styles.heroVisual}>
+              <img src={useBaseUrl('/img/logo.png')} alt="RepoPrint Logo" className={styles.heroImage} onError={(e) => { e.target.src = '/img/logo.png'; }} />
+            </div>
           </div>
         </section>
 

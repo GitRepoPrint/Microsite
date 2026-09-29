@@ -4,22 +4,93 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: var(--ifm-background-surface-color, #f8f9fa);
+  background-image: url('/img/octopus-pattern.png');
+  background-repeat: repeat;
+  background-size: 140px 140px;
+  background-position: center;
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+[data-theme='dark'] .heroBanner {
+  background-color: #0b1220;
+}
+
+[data-theme='dark'] .heroBanner::before {
+  background: rgba(11, 18, 32, 0.5);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem 5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 3rem;
+}
+
+.heroContent,
+.heroVisual {
+  position: relative;
+  z-index: 1;
+}
+
+.heroTitle {
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 1rem 0 1.5rem 0;
+  color: var(--ifm-heading-color, #111827);
+}
+
+[data-theme='dark'] .heroTitle {
+  color: #f8fafc;
+}
+
+.heroDescription {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-700, #475569);
+  margin-bottom: 2.5rem;
+}
+
+[data-theme='dark'] .heroDescription {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.heroTagline {
+  color: var(--ifm-color-primary-darkest, #5c35a1);
+}
+
+[data-theme='dark'] .heroTagline {
+  color: #c4b5fd;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .heroInner {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .heroTitle {
+    font-size: 2.6rem;
   }
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .primaryButton {
@@ -38,13 +109,20 @@
 }
 
 .secondaryButton {
-  border: 1.5px solid #cbd5e1;
-  color: inherit;
+  border: 1.5px solid var(--ifm-color-emphasis-300, #cbd5e1);
+  color: var(--ifm-font-color-base, #111827);
+  background-color: rgba(255, 255, 255, 0.18);
   font-weight: 600;
   padding: 0.85rem 2rem;
   border-radius: 30px;
   text-decoration: none;
   display: inline-block;
+}
+
+[data-theme='dark'] .secondaryButton {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  background-color: rgba(15, 23, 42, 0.2);
 }
 
 .featureCircle {

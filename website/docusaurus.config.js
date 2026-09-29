@@ -85,10 +85,12 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-      title: 'RepoPrint',
+      title: '',
       logo: {
         alt: 'Logo RepoPrint',
-        src: 'img/logo.png',
+        src: 'img/logo_final.png',
+        srcDark: 'img/logo_final_branco.png',
+
       },
       items: [
         { to: '/', label: 'Home', position: 'left' },

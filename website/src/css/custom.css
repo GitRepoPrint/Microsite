@@ -78,3 +78,65 @@ article .markdown > p {
 .breadcrumbs {
   display: none;
 }
+
+/* Posicionamento relativo para permitir descolar o logo */
+.navbar > .navbar__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Encosta o logo ao extremo esquerdo sem empurrar o resto */
+.navbar__brand {
+  position: absolute;
+  left: 8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 0;
+}
+
+/* Mantém os links centrados na barra */
+.navbar__items {
+  margin: 0 auto;
+}
+
+/* Mantém os itens da direita (GitHub / Dark mode) na ponta direita */
+.navbar__items--right {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+/* Segmenta especificamente o contentor do hero/cabeçalho da página inicial */
+[class*='heroBanner'] {
+  background-image: url('/img/octopus-pattern.png');
+  background-repeat: repeat;
+  background-size: 150px 150px; /* Ajuste o tamanho de cada polvo repetido aqui */
+  background-attachment: scroll;
+  /* Isto cria a sobreposição semitransparente por cima do fundo preto existente */
+  position: relative;
+}
+
+[class*='heroBanner']::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Ajuste a transparência total aqui (0.05 é muito sutil) */
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 1; /* Coloca a transparência por cima da imagem padrão */
+}
+
+/* Garante que o texto e o polvo principal ficam por cima do padrão */
+[class*='heroBanner'] > div {
+  position: relative;
+  z-index: 2;
+}
