@@ -108,6 +108,23 @@ article .markdown > p {
   transform: translateY(-50%);
 }
 
+.navbar__link[href='/'],
+.navbar__link[href='/Microsite/'] {
+  font-weight: 700;
+}
+
+.navbar__link[href='/']:not(.navbar__link--active),
+.navbar__link[href='/Microsite/']:not(.navbar__link--active) {
+  color: var(--ifm-navbar-link-color);
+}
+
+.navbar__link[href='/']:hover,
+.navbar__link[href='/Microsite/']:hover,
+.navbar__link[href='/'].navbar__link--active,
+.navbar__link[href='/Microsite/'].navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
 .milestones-page {
   padding: 2rem 1rem 4rem;
 }

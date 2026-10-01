@@ -58,25 +58,6 @@
   color: #f8fafc;
 }
 
-.heroDescription {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: var(--ifm-color-emphasis-700, #475569);
-  margin-bottom: 2.5rem;
-}
-
-[data-theme='dark'] .heroDescription {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.heroTagline {
-  color: var(--ifm-color-primary-darkest, #5c35a1);
-}
-
-[data-theme='dark'] .heroTagline {
-  color: #c4b5fd;
-}
-
 @media screen and (max-width: 996px) {
   .heroInner {
     padding: 2rem 1.25rem 3rem;
@@ -85,44 +66,6 @@
   .heroTitle {
     font-size: 2.6rem;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.primaryButton {
-  background-color: #8561c5;
-  color: #ffffff;
-  font-weight: 700;
-  padding: 0.85rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.primaryButton:hover,
-.primaryButton:focus {
-  background-color: #7046be;
-}
-
-.secondaryButton {
-  border: 1.5px solid var(--ifm-color-emphasis-300, #cbd5e1);
-  color: var(--ifm-font-color-base, #111827);
-  background-color: rgba(255, 255, 255, 0.18);
-  font-weight: 600;
-  padding: 0.85rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-[data-theme='dark'] .secondaryButton {
-  border-color: rgba(255, 255, 255, 0.5);
-  color: #ffffff;
-  background-color: rgba(15, 23, 42, 0.2);
 }
 
 .featureCircle {
@@ -143,10 +86,6 @@
   stroke: #ffffff !important;
   fill: #ffffff !important;
   color: #ffffff !important;
-}
-
-.heroTagline {
-  color: var(--ifm-color-primary-darkest, #5c35a1);
 }
 
 .heroImage {

@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import { hero, overview, features } from '../content/home.mdx';
 
@@ -30,23 +29,9 @@ export default function Home() {
         <section className={styles.heroBanner}>
           <div className={styles.heroInner}>
             <div className={styles.heroContent}>
-              <span className={styles.heroTagline} style={{ fontWeight: '700', fontSize: '0.9rem', letterSpacing: '1px', textTransform: 'uppercase' }}>
-                {hero.tagline}
-              </span>
               <h1 className={styles.heroTitle}>
                 {hero.title}
               </h1>
-              <p className={styles.heroDescription}>
-                {hero.description}
-              </p>
-              <div className={styles.buttons} style={{ gap: '1rem', flexWrap: 'wrap' }}>
-                <Link to="/milestones" className={styles.primaryButton}>
-                  Get Started
-                </Link>
-                <Link to="/docs/team" className={styles.secondaryButton}>
-                  Learn more
-                </Link>
-              </div>
             </div>
             <div className={styles.heroVisual}>
               <img src={useBaseUrl('/img/logo.png')} alt="RepoPrint Logo" className={styles.heroImage} onError={(e) => { e.target.src = '/img/logo.png'; }} />
@@ -72,9 +57,6 @@ export default function Home() {
             <h2 style={{ fontSize: '2.6rem', fontWeight: '800', color: 'var(--ifm-heading-color)', margin: '0 0 0.8rem 0' }}>
               Main features
             </h2>
-            <p style={{ fontSize: '1.2rem', color: '#64748b', margin: 0 }}>
-              Comprehensive Git auditing from code to compliance.
-            </p>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(440px, 1fr))', gap: '3.5rem 3rem' }}>
