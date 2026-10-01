@@ -11,7 +11,7 @@ const teamMembers = [
   },
   {
     name: 'Gil Ernesto',
-    role: 'Architect',
+    role: 'Quality Assurance',
     image: 'img/team/gil.jpeg',
     github: 'https://github.com/',
   },

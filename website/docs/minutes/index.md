@@ -1,62 +1,68 @@
 ---
 id: index
-title: Minutes
+title: Meeting Minutes
 sidebar_label: Overview
 slug: /minutes
+hide_title: true
 ---
 
 import Link from '@docusaurus/Link';
 
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginTop: '1rem' }}>
+<main className="minutes-page">
+  <header className="minutes-header">
+    <h1>Meeting Minutes</h1>
+    <p>Official records of advisor consultations, team iterations, and architectural milestones.</p>
+  </header>
 
-  {/* Advisors Minutes */}
-  <div style={{ border: '2px solid var(--ifm-color-primary)', borderRadius: '12px', padding: '1.5rem', textAlign: 'center' }}>
-    <h2 style={{ color: 'var(--ifm-color-primary)', marginBottom: '1.5rem' }}>Advisors Minutes</h2>
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1rem' }}>
-      <Link
-        to="/docs/minutes/advisors/minute-01"
-        style={{
-          border: '1.5px solid var(--ifm-color-primary)',
-          borderRadius: '8px',
-          padding: '0.85rem 1rem',
-          textDecoration: 'none',
-          fontWeight: '600',
-          display: 'block'
-        }}>
-        📑 Minute 01 - 23/09
-      </Link>
-      <Link
-        to="/docs/minutes/advisors/minute-03"
-        style={{
-          border: '1.5px solid var(--ifm-color-primary)',
-          borderRadius: '8px',
-          padding: '0.85rem 1rem',
-          textDecoration: 'none',
-          fontWeight: '600',
-          display: 'block'
-        }}>
-        📑 Minute 03 - 28/09
-      </Link>
-    </div>
-  </div>
+  <section className="minutes-section" aria-labelledby="advisor-consultations">
+    <h2 id="advisor-consultations">Advisor Consultations</h2>
+    <ul className="minutes-list">
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-01">
+          <time dateTime="2026-09-23">2026-09-23</time>
+          <span className="minutes-row__title">Minute 01 — Advisor Consultation &amp; Project Planning</span>
+          <span className="minutes-row__tag">Team + Advisors</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-03">
+          <time dateTime="2026-09-28">2026-09-28</time>
+          <span className="minutes-row__title">Minute 03 — Milestone 1 Presentation &amp; Advisor Review</span>
+          <span className="minutes-row__tag">Team + Advisors</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-05">
+          <time dateTime="2026-09-30">2026-09-30</time>
+          <span className="minutes-row__title">Minute 05 — Milestone 2 Deliverables &amp; Architecture Review</span>
+          <span className="minutes-row__tag">Team + Advisors</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+    </ul>
+  </section>
 
-  {/* Team Minutes */}
-  <div style={{ border: '2px solid var(--ifm-color-primary)', borderRadius: '12px', padding: '1.5rem', textAlign: 'center' }}>
-    <h2 style={{ color: 'var(--ifm-color-primary)', marginBottom: '1.5rem' }}>Team Minutes</h2>
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1rem' }}>
-      <Link
-        to="/docs/minutes/team/minute-02"
-        style={{
-          border: '1.5px solid var(--ifm-color-primary)',
-          borderRadius: '8px',
-          padding: '0.85rem 1rem',
-          textDecoration: 'none',
-          fontWeight: '600',
-          display: 'block'
-        }}>
-        📑 Minute 02 - 24/09
-      </Link>
-    </div>
-  </div>
-
-</div>
+  <section className="minutes-section" aria-labelledby="internal-team-meetings">
+    <h2 id="internal-team-meetings">Internal Team Meetings</h2>
+    <ul className="minutes-list">
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-02">
+          <time dateTime="2026-09-24">2026-09-24</time>
+          <span className="minutes-row__title">Minute 02 — Team Organization &amp; Initial Workflow</span>
+          <span className="minutes-row__tag">Internal Team</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-04">
+          <time dateTime="2026-09-29">2026-09-29</time>
+          <span className="minutes-row__title">Minute 04 — Milestone 1 Presentation Rehearsal</span>
+          <span className="minutes-row__tag">Internal Team</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+    </ul>
+  </section>
+</main>

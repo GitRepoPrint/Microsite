@@ -2,6 +2,7 @@
 id: minute-02
 title: Minute 02 - 24/09
 sidebar_label: Minute 02 - 24/09
+slug: /minutes/minute-02
 ---
 
 # Minute 02

@@ -17,7 +17,7 @@ We are a group of students from University of Aveiro. Passionate about software 
   <Member name="Gil Ernesto" email="gilernesto@ua.pt" role="Architect" image="/img/team/gil.jpeg" github="https://github.com/GilErnesto" linkedin="https://www.linkedin.com/in/gil-guedes?utm_source=share_via&utm_content=profile&utm_medium=member_android" />
   <Member name="Tiago Costa" email="tiagofccosta@ua.pt" role="DevOps Master" image="/img/team/tiago.jpeg" github="https://github.com/tiagofcc" />
   <Member name="Nuno Costa" email="nunoc27@ua.pt" role="Architect" image="/img/team/nuno.jpeg" github="https://github.com/NunoC0sta" linkedin="https://www.linkedin.com/in/nuno-costa-952849312?utm_source=share_via&utm_content=profile&utm_medium=member_android" />
-  <Member name="Artur Yavorskyy" email="arturyavorskyy@ua.pt" role="Product Owner" image="/img/team/artur.jpeg" github="github.com/ArturY0411m" />
+  <Member name="Artur Yavorskyy" email="arturyavorskyy@ua.pt" role="Product Owner" image="/img/team/artur.jpeg" github="github.com/ArturY0411" />
 </MemberGrid>
 
 ## Our Advisors

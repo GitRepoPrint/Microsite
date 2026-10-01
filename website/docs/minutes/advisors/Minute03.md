@@ -2,6 +2,7 @@
 id: minute-03
 title: Minute 03 - 28/09
 sidebar_label: Minute 03 - 28/09
+slug: /minutes/minute-03
 ---
 
 # Minute 03
@@ -21,7 +22,6 @@ sidebar_label: Minute 03 - 28/09
 
 ## Objective of the meeting
 Presentation of Milestone 1 to project advisors, followed by their feedback and review.
-
 
 
 ## Agenda
