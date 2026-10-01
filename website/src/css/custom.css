@@ -371,8 +371,19 @@ article .markdown > p {
   }
 }
 
+.home-overview {
+  background-color: #f1f7fe;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+[data-theme='light'] .home-overview {
+  background-color: #d1d5db;
+}
+
 /* Segmenta especificamente o contentor do hero/cabeçalho da página inicial */
 [class*='heroBanner'] {
+  background-color: #000000 !important;
   background-image: url('/img/octopus-pattern.png');
   background-repeat: repeat;
   background-size: 150px 150px; /* Ajuste o tamanho de cada polvo repetido aqui */
@@ -397,6 +408,14 @@ article .markdown > p {
 [class*='heroBanner'] > div {
   position: relative;
   z-index: 2;
+}
+
+[data-theme='light'] [class*='heroBanner'] [class*='heroTitle'] {
+  color: #ffffff;
+}
+
+[data-theme='light'] [class*='heroBanner'] {
+  background-color: #3f3f46 !important;
 }
 
 

@@ -40,7 +40,7 @@ export default function Home() {
         </section>
 
         {/* Overview */}
-        <section style={{ backgroundColor: '#f1f7fe', padding: '5rem 2rem', textAlign: 'center' }}>
+        <section className="home-overview">
           <div style={{ maxWidth: '850px', margin: '0 auto' }}>
             <h2 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '1.5rem', color: '#0f172a' }}>
               {overview.title}
