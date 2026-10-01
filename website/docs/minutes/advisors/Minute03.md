@@ -13,11 +13,7 @@ slug: /minutes/minute-03
 - **Location:** IEETA
 
 ## Participants
-- Margarida
-- Artur
-- Gil
-- Nuno
-- Tiago
+- **Team:** Margarida Cardoso, Artur Yavorskyy, Gil Ernesto, Nuno Costa, Tiago Costa
 - **Advisors:** Raquel Paradinha, José Gameiro
 
 ## Objective of the meeting
@@ -27,7 +23,6 @@ Presentation of Milestone 1 to project advisors, followed by their feedback and 
 ## Agenda
 1. Presentation of Milestone 1 to project advisors
 2. Advisor feedback and architectural review
-3. Discussion of next steps and work plan for Milestone 2
 
 ## Decisions taken
 - Gil Ernesto will assume the role of Quality Assurance instead of Architect.
@@ -43,12 +38,8 @@ Presentation of Milestone 1 to project advisors, followed by their feedback and 
     - Introduce core technical concepts early (STRIDE, LINDDUN) so the audience can follow without prerequisite gaps.
 - Avoid expanding on individual team roles during the presentation delivery.
 
-## Next meeting with advisors
-- **Date:** Wednesday, 30/09/2026
-- **Time:** 15h30
-- **Purpose:** Current progress and next steps
 
-## Next meeting - only team
+## Next meeting
 - **Date:** Tuesday, 29/09/2026
 - **Time:** 14h
 - **Purpose:** Rehearsing the Milestone 1 presentation

@@ -16,6 +16,7 @@ const sidebars = {
       items: [
         'minutes/advisors/minute-01',
         'minutes/advisors/minute-03',
+        'minutes/advisors/minute-05',
       ],
     },
     {
@@ -24,6 +25,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'minutes/team/minute-02',
+        'minutes/team/minute-04',
       ],
     },
   ],

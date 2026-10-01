@@ -13,11 +13,7 @@ slug: /minutes/minute-05
 - **Location:** Open Space IEETA
 
 ## Participants
-- Margarida Cardoso
-- Artur Yavorskyy
-- Gil Guedes
-- Nuno Costa
-- Tiago Costa
+- **Team:** Margarida Cardoso, Artur Yavorskyy, Gil Ernesto, Nuno Costa, Tiago Costa
 - **Advisors:** Raquel Paradinha, José Gameiro
 
 ## Objective of the meeting
@@ -43,8 +39,8 @@ Review project status, validate high-level architecture decisions, and clarify e
   - Adopt a multi-repository model (one repository per component) coordinated via Git submodules.
 
 ## Next meeting
-- **Date:** Monday, 07/10/2026
-- **Time:** 15h30
+- **Date:** Tuesday, 06/10/2026
+- **Time:** 10h
 - **Purpose:** Follow-up on Milestone 2 deliverables and status review.
 
 

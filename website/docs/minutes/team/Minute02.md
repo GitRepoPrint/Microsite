@@ -13,11 +13,7 @@ slug: /minutes/minute-02
 - **Location:** Maker Lab
 
 ## Participants
-- Margarida
-- Artur
-- Gil
-- Nuno
-- Tiago
+- **Team:** Margarida Cardoso, Artur Yavorskyy, Gil Ernesto, Nuno Costa, Tiago Costa
 
 ## Objective of the meeting
 Define the division of work, assign roles, and establish initial project organization and GitHub configuration.
@@ -45,7 +41,7 @@ Define the division of work, assign roles, and establish initial project organiz
 
 ## Roles on the project
 - **Team Manager / Scrum Master:** Margarida
-- **Architect:** Gil
+- **Architect 1:** Gil
 - **DevOps:** Tiago
 - **Architect 2:** Nuno
 - **Product Owner:** Artur

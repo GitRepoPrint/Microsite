@@ -13,11 +13,7 @@ slug: /minutes/minute-01
 - **Location:** IEETA
 
 ## Participants
-- Margarida
-- Artur
-- Gil
-- Nuno
-- Tiago
+- **Team:** Margarida Cardoso, Artur Yavorskyy, Gil Ernesto, Nuno Costa, Tiago Costa
 - **Advisors:** Raquel Paradinha, José Gameiro
 
 ## Objective of the meeting

@@ -13,11 +13,7 @@ slug: /minutes/minute-04
 - **Location:** Anf. V and Maker Lab
 
 ## Participants
-- Margarida
-- Artur
-- Gil
-- Nuno
-- Tiago
+- **Team:** Margarida Cardoso, Artur Yavorskyy, Gil Ernesto, Nuno Costa, Tiago Costa
 
 ## Objective of the meeting
 Make sure we are ready for the M1 presentation. Change slides acording to new feedback from Advisor.
@@ -25,8 +21,14 @@ Make sure we are ready for the M1 presentation. Change slides acording to new fe
 ## Agenda
 1. Presentation Rehearsel
 2. High-level Architecture
+3. Phrase that describes our project
 
-## Next meeting with advisors
+# Decisions taken
+- High-level Architecture
+![High-level Architecture Diagram](/img/minutes/High-level_Architecture_Diagram.png)
+- Phrase that describes our project: Automating architectural security directly from your Git workflow. 
+
+## Next meeting
 - **Date:** Wednesday, 30/09/2026
 - **Time:** 15h30
 - **Purpose:** Current progress and next steps
