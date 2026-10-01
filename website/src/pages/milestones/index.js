@@ -34,13 +34,8 @@ export default function MilestonesOverview() {
     <Layout title="Project Milestones" description="Overview of the project milestones and roadmap.">
       <main className="milestones-page">
         <section className="milestones-hero">
-          <p className="milestones-hero__eyebrow">Project roadmap</p>
           <h1>Project Milestones</h1>
-          <p>
-            Our project follows a structured four-phase development process, from initial
-            discovery through planning, construction, and final delivery. Each milestone
-            represents a key stage in the evolution of the solution.
-          </p>
+
         </section>
 
         <section className="milestone-grid" aria-label="Project milestones overview">

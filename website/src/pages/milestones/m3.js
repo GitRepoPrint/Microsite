@@ -11,7 +11,7 @@ export default function MilestoneM3() {
         </div>
 
         <div className="alert alert--info" style={{ maxWidth: '820px', margin: '0 auto' }}>
-          This milestone is currently being prepared and will be available soon.
+          This milestone hasn't happened yet.
         </div>
       </main>
     </Layout>

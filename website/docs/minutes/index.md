@@ -11,7 +11,6 @@ import Link from '@docusaurus/Link';
 <main className="minutes-page">
   <header className="minutes-header">
     <h1>Meeting Minutes</h1>
-    <p>Official records of advisor consultations and team iterations.</p>
   </header>
 
   <section className="minutes-section" aria-labelledby="advisor-consultations">
