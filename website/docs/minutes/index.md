@@ -14,7 +14,7 @@ import Link from '@docusaurus/Link';
   </header>
 
   <section className="minutes-section" aria-labelledby="advisor-consultations">
-    <h2 id="advisor-consultations">Advisor Consultations</h2>
+    <h2 id="advisor-consultations">Advisors Meetings</h2>
     <ul className="minutes-list">
       <li>
         <Link className="minutes-row" to="/docs/minutes/minute-01">
