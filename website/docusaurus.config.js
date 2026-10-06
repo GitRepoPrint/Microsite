@@ -121,6 +121,11 @@ const config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          href: 'https://uapt33090-my.sharepoint.com/:f:/g/personal/tiagofccosta_ua_pt/IgCZ4LQxDQHKQoqjYEVPogXHAdg2upQixD_k94Hah5PIG88?e=habdTf',
+          label: 'OneDrive',
+          position: 'right',
+        },
         ],
       },
       footer: {
