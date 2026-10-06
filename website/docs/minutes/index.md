@@ -37,6 +37,13 @@ import Link from '@docusaurus/Link';
           <span className="minutes-row__arrow" aria-hidden="true">→</span>
         </Link>
       </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-06">
+          <time dateTime="2026-10-06">2026-10-06</time>
+          <span className="minutes-row__title">Minute 06 — Architecture &amp; Requirements Review</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
     </ul>
   </section>
 
