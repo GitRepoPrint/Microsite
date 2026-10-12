@@ -51,7 +51,7 @@ Define technical architecture and deployment guidelines, align functional and no
   - Use catchphrase with only this idea: "threat fingerprinting for Git repositories".
 
 ## Next meeting
-- **Date:** Wednesday, 12/10/2026
+- **Date:** Monday, 12/10/2026
 - **Time:** 14h00
 - **Purpose:** Rehearsing the Milestone 2 presentation
 
