@@ -55,6 +55,8 @@ const sidebars = {
         'minutes/advisors/minute-05',
         'minutes/advisors/minute-06',
         'minutes/advisors/minute-07',
+        'minutes/advisors/minute-09',
+        'minutes/advisors/minute-10',
       ],
     },
     {
@@ -64,6 +66,7 @@ const sidebars = {
       items: [
         'minutes/team/minute-02',
         'minutes/team/minute-04',
+        'minutes/team/minute-08',
       ],
     },
   ],

@@ -51,6 +51,20 @@ import Link from '@docusaurus/Link';
           <span className="minutes-row__arrow" aria-hidden="true">→</span>
         </Link>
       </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-09">
+          <time dateTime="2026-10-14">2026-10-14</time>
+          <span className="minutes-row__title">Minute 09 — Milestone 3 Planning &amp; Task Distribution</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-10">
+          <time dateTime="2026-10-29">2026-10-29</time>
+          <span className="minutes-row__title">Minute 10 — Advisor Consultation: UI/UX &amp; Project Organization</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
     </ul>
   </section>
 
@@ -68,6 +82,13 @@ import Link from '@docusaurus/Link';
         <Link className="minutes-row" to="/docs/minutes/minute-04">
           <time dateTime="2026-09-29">2026-09-29</time>
           <span className="minutes-row__title">Minute 04 — Milestone 1 Presentation Rehearsal</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-08">
+          <time dateTime="2026-10-13">2026-10-13</time>
+          <span className="minutes-row__title">Minute 08 — Milestone 2 Presentation Rehearsal</span>
           <span className="minutes-row__arrow" aria-hidden="true">→</span>
         </Link>
       </li>
