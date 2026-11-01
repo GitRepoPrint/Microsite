@@ -98,6 +98,20 @@ const config = {
         { to: '/', label: 'Home', position: 'left', exact: true },
         {
           type: 'dropdown',
+          label: 'Documentation',
+          to: '/docs/documentation',
+          position: 'left',
+          items: [
+            { label: 'Personas', to: '/docs/documentation/personas' },
+            { label: 'State of the Art', to: '/docs/documentation/state-of-the-art' },
+            { label: 'Use Cases', to: '/docs/documentation/use-cases' },
+            { label: 'Requirements', to: '/docs/documentation/requirements' },
+            { label: 'Architecture', to: '/docs/documentation/architecture' },
+            { label: 'UI Mockups', to: '/docs/documentation/mockups' },
+          ],
+        },
+        {
+          type: 'dropdown',
           label: 'Milestones',
           to: '/milestones',
           position: 'left',
