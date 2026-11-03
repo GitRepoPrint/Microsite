@@ -38,6 +38,11 @@ const sidebars = {
       id: 'documentation/mockups',
       label: 'UI Mockups',
     },
+    {
+      type: 'doc',
+      id: 'documentation/compliance',
+      label: 'Legal & Compliance',
+    },
   ],
   minutesSidebar: [
     {

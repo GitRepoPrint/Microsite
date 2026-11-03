@@ -108,6 +108,7 @@ const config = {
             { label: 'Requirements', to: '/docs/documentation/requirements' },
             { label: 'Architecture', to: '/docs/documentation/architecture' },
             { label: 'UI Mockups', to: '/docs/documentation/mockups' },
+            { label: 'Legal, Privacy & Compliance', to: '/docs/documentation/compliance' },
           ],
         },
         {

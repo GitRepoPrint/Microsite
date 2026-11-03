@@ -5,100 +5,88 @@ sidebar_label: Requirements
 slug: /documentation/requirements
 ---
 
-# Requirements
+# Requirements Specification
 
-## Functional Requirements
-
-### Overview
-- **Instant analysis:** scan a public repository without authentication.
-- **Secret detection:** find leaked credentials, private keys and API tokens.
-- **Code parsing:** use Tree-sitter to extract APIs, databases and external services from the source.
-- **DFD generation:** build the Data Flow Diagram from code and configuration.
-- **STRIDE:** identify and categorize security threats from the DFD.
-- **LINDDUN:** identify and categorize privacy risks across data flows and storage.
-- **AI assistant:** guide remediation from the audit report.
-- **PDF report:** aggregate all findings and diagrams into an exportable report.
-
-### Complete Specification: 23 Functional Requirements
-
-#### Instant analysis
-- **FR1:** instant public repository analysis.
-
-#### Authentication and repository management
-- **FR2:** third-party OAuth (GitHub) with no local credentials.
-- **FR3:** private repository association.
-- **FR4:** user accounts and access control.
-
-#### Repository and team dynamics
-- **FR5:** Git metadata extraction.
-- **FR6:** team activity metrics (cadence, active contributors, PR merge time, review ratios, issue resolution).
-- **FR7:** repository hygiene (branch protection, languages, dependencies, tests, CI/CD).
-- **FR8:** secret detection in Git history.
-
-#### Code parsing and DFD
-- **FR9:** language detection and structural filtering.
-- **FR10:** AST parsing with Tree-sitter.
-- **FR11:** automated DFD generation.
-- **FR12:** interactive DFD canvas (auto-layout, zoom, positioning, trust boundaries).
-- **FR13:** manual DFD topology editing.
-
-#### Threat modeling and risk
-- **FR14:** STRIDE detection.
-- **FR15:** LINDDUN assessment.
-- **FR16:** contextual risk prioritization that crosses findings with repository activity.
-
-#### SLM and remediation
-- **FR17:** mitigation recommendations from a local SLM.
-- **FR18:** conversational assistant.
-- **FR19:** false-positive triage with justifications and score adjustment.
-
-#### Persistence and reporting
-- **FR20:** historical analysis persistence.
-- **FR21:** evolution tracking across commits and pull requests.
-- **FR22:** extension summary view.
-- **FR23:** continuous document report exported as PDF.
+This document details RepoPrint's **Functional Requirements (FR)** and **Non-Functional Requirements (NFR)**, updated with the **Milestone 3 MVP scope partitioning**, **GDPR privacy specifications**, **EU AI Act compliance**, and **WCAG accessibility standards**.
 
 ---
 
-## Non-Functional Requirements
+## 1. Functional Requirements
 
-### Overview
-- **Reliability:** availability, fault isolation between analyses, automatic recovery.
-- **Security:** TLS, secure session cookies, Keycloak (OIDC/OAuth 2.0), encrypted tokens, audit logs, analysis limits.
-- **GDPR & privacy compliance:** account deletion, data minimization, data portability, log retention.
-- **Deployment:** Docker containers, reproducible environments, configuration through environment variables.
-- **Maintainability:** analysis engines decoupled from each other.
-- **Compatibility:** Chromium, Firefox and Safari engines.
+### 1.1. Core Overview
+- **Instant Analysis:** Scan public repositories statelessly without requiring credentials.
+- **Secret Detection:** Identify leaked tokens, private keys, and passwords across Git histories.
+- **Code Parsing:** Parse source code using Tree-sitter to identify APIs, databases, routes, and external boundaries.
+- **DFD Generation:** Synthesize architectural Data Flow Diagrams automatically from source and configuration files.
+- **STRIDE Threat Modeling:** Detect and categorize cybersecurity threats across data flows and entities.
+- **LINDDUN Privacy Modeling:** Detect and categorize data privacy risks across data flows and storage nodes.
+- **AI-Assisted Remediation:** Provide contextual mitigation guidance powered by a local Small Language Model (SLM).
+- **Audit Reporting:** Aggregate architecture, team dynamics, threat tables, and mitigations into an exportable document.
 
-### Complete Specification: 19 Non-Functional Requirements
+### 1.2. Complete Specification: 23 Functional Requirements
 
-#### Reliability
-- **NFR1:** at least 99.0% availability.
-- **NFR2:** analysis failures isolated in asynchronous workers.
-- **NFR3:** automatic restart of FastAPI, Redis, PostgreSQL and Keycloak containers.
+| ID | Requirement Area | Description | Implementation Status |
+| :--- | :--- | :--- | :---: |
+| **FR1** | Instant Analysis | Instant analysis of public repositories without user login. | **MVP** |
+| **FR2** | Authentication | Third-party OAuth 2.0 (GitHub) integration with no local password storage. | **MVP** |
+| **FR3** | Repository Management | Associate and manage private repositories authorized via GitHub tokens. | **MVP** |
+| **FR4** | User Access Control | User account profiles, organizational workspaces, and role-based access. | **MVP** |
+| **FR5** | Git Metadata Mining | Extraction of Git commit history, contributor logs, and branch trees. | **MVP** |
+| **FR6** | Team Activity Metrics | Mining cadence, active contributors, PR merge duration, and review ratios. | **MVP** |
+| **FR7** | Repository Hygiene | Auditing branch protections, dependency health, test coverage, and CI/CD pipelines. | **MVP** |
+| **FR8** | Secret Detection | Automated scanning for leaked secrets and API keys across Git commits. | **MVP** |
+| **FR9** | Language Detection | Automatic detection of programming languages and filtering of structural files. | **MVP** |
+| **FR10** | AST Parsing | Parsing source syntax trees via Tree-sitter to extract architectural components. | **MVP** |
+| **FR11** | Automated DFD Inference | Automatic synthesis of Data Flow Diagrams from extracted components and IaC files. | **MVP** |
+| **FR12** | Interactive DFD Canvas | Interactive canvas with auto-layout, zoom, pan, trust boundaries, and threat overlays. | **MVP** |
+| **FR13** | Manual DFD Editing | Direct manual editing, node addition, and flow adjustment on the canvas. | **Post-MVP (M4)** |
+| **FR14** | STRIDE Detection | Automated rule-based evaluation of STRIDE cybersecurity threats across the DFD. | **MVP** |
+| **FR15** | LINDDUN Assessment | Automated rule-based evaluation of LINDDUN privacy risks across data flows. | **MVP** |
+| **FR16** | Contextual Prioritization | Scoring threat severity by crossing findings with repository activity and hygiene. | **MVP** |
+| **FR17** | SLM Remediation Guidance | Generating contextual mitigation advice for detected threats using a local SLM. | **MVP** |
+| **FR18** | Conversational Assistant | Context-aware interactive chatbot panel for live vulnerability queries. | **Post-MVP (M4)** |
+| **FR19** | False-Positive Triage | Flagging false positives with mandatory technical justifications and score updates. | **MVP** |
+| **FR20** | Historical Persistence | Storing historical analysis runs, findings, and DFD versions for authenticated users. | **MVP** |
+| **FR21** | Evolution Tracking | Tracking posture changes, metric diffs, and threat resolution across commits. | **MVP** |
+| **FR22** | Extension Summary View | Compact posture badge and critical risk summary inside the browser extension. | **Post-MVP (M4)** |
+| **FR23** | Exportable Audit Report | Compiling findings, diagrams, and regulatory mappings into a printable PDF report. | **MVP** |
 
-#### Security
-- **NFR4:** cloned source code purged once the analysis ends.
-- **NFR5:** TLS/HTTPS everywhere.
-- **NFR6:** session tokens only in HttpOnly, Secure, SameSite=Lax cookies.
-- **NFR7:** Keycloak for login, sessions and roles (OIDC, OAuth 2.0).
-- **NFR8:** GitHub tokens encrypted at rest and never exposed by the API.
-- **NFR9:** audit logs of every inspection.
-- **NFR10:** execution timeout and file limit per analysis.
+---
 
-#### GDPR and privacy
-- **NFR11:** account deletion within 48 hours.
-- **NFR12:** data minimization.
-- **NFR13:** JSON export of profile and history.
-- **NFR14:** logs with user identifiers deleted or anonymized after 90 days.
+## 2. Non-Functional Requirements
 
-#### Deployment
-- **NFR15:** all services in Docker containers.
-- **NFR16:** Docker Compose for development and production.
-- **NFR17:** configuration and secrets only through environment variables.
+### 2.1. Complete Specification: 21 Non-Functional Requirements
 
-#### Maintainability
-- **NFR18:** decoupled analysis engines, so STRIDE or DFD extraction can be updated independently.
+#### Reliability & Availability
+- **NFR1:** Maintain a minimum of 99.0% service availability.
+- **NFR2:** Isolation of analysis pipeline failures inside asynchronous worker sandboxes to prevent server crashes.
+- **NFR3:** Automatic restart and health monitoring of FastAPI, Redis, PostgreSQL, and Keycloak containers.
 
-#### Compatibility
-- **NFR19:** consistent behavior in Chromium-based browsers, Firefox and Safari on desktop.
+#### Security & Infrastructure Defense
+- **NFR4 (Zero Code Persistence):** Cloned repository source code is stored exclusively in ephemeral storage and **permanently wiped immediately after analysis**.
+- **NFR5 (Encryption in Transit):** Strict HTTPS/TLS 1.3 enforced across all external network traffic via a secure reverse proxy.
+- **NFR6 (Secure Sessions):** Authentication tokens stored exclusively in `HttpOnly`, `Secure`, `SameSite=Lax` cookies.
+- **NFR7 (Identity Management):** Centralized identity, single sign-on (SSO), and role-based access control (RBAC) powered by Keycloak.
+- **NFR8 (Encryption at Rest):** Sensitive credentials and GitHub OAuth tokens encrypted using **AES-256** via PostgreSQL `pgcrypto`; persistent volumes reside on encrypted virtual machine partitions.
+- **NFR9 (Audit Logging):** Immutable operational audit logging of all scan requests and authentication events.
+- **NFR10 (Execution Limits):** Hard resource quotas, execution timeouts, and file count limits per repository scan to defend against DoS.
+
+#### GDPR, Privacy & Regulatory Compliance
+- **NFR11 (Right to Be Forgotten):** Automated user data erasure workflow executing within **48 hours**, revoking OAuth tokens and scrubbing account records (with operational logs retained for 90 days under Art. 6(1)(f)).
+- **NFR12 (Data Minimization):** Strict collection of only necessary operational metadata; author names/emails are pseudonymized during Git profiling.
+- **NFR13 (Data Portability):** Support for complete user data export (profile, projects, and findings) in structured **JSON** format.
+- **NFR14 (Log Retention Window):** Operational audit logs containing user identifiers and IP addresses are permanently deleted or irreversibly anonymized after **90 days**.
+- **NFR15 (AI Transparency & Safety):** Compliance with the **EU AI Act (Art. 50)** — all SLM outputs are explicitly marked as machine-generated, disclaim automated certification, and are prohibited from rating individual developers.
+
+#### Usability & Accessibility (WCAG 2.1/2.2 AA)
+- **NFR16 (Universal Accessibility):** Adherence to WCAG 2.1 Level AA across web interfaces, featuring:
+  - *Non-Text Content (1.1.1):* Structured data flow table, ARIA labels, and screen reader announcements for DFD trust boundaries.
+  - *Keyboard Accessibility (2.1.1 & 2.5.7):* Full keyboard controls to establish and disconnect DFD connections without mouse dragging.
+  - *Color Independence (1.4.1):* Multi-modal threat severity styling using distinct stroke patterns (solid vs dashed) and explicit text badges.
+
+#### Deployment, Maintainability & Compatibility
+- **NFR17 (Containerization):** 100% of services containerized using Docker, with automated orchestration via Docker Compose.
+- **NFR18 (Config Management):** All secrets, credentials, and environment configurations injected strictly through environment variables.
+- **NFR19 (Decoupled Engines):** Modular, decoupled analysis engines allowing Tree-sitter grammars, STRIDE, and LINDDUN rules to be updated independently.
+- **NFR20 (Cross-Browser Compatibility):** Verified functionality across modern desktop browser engines (Chromium, Firefox, Safari/WebKit).
+- **NFR21 (Local AI Air-Gap):** SLM execution powered strictly by local infrastructure (Ollama), ensuring no repository data leaves the host environment.

@@ -7,7 +7,7 @@ slug: /documentation/use-cases
 
 # Use Cases & User Stories
 
-Every use case comes from one user story. The main flow of each one is summarized below.
+Every use case derives from a specific user story and persona requirement. The primary workflows across all user roles are detailed below.
 
 ### Software development team manager
 - **UC01 Create account** (all actors): *to access a more detailed report.* Register or log in, with OAuth options, and land on a personal dashboard.
@@ -25,3 +25,23 @@ Every use case comes from one user story. The main flow of each one is summarize
 
 ### Open-source software user
 - **UC11 Browser extension scanning:** *to get a summary of critical risks without leaving the current workflow.* Fill in the URL, scan, read the preliminary threat summary and open the full report on the web app.
+
+---
+
+## MVP Scope & Delivery Phasing (Milestone 3)
+
+During Milestone 3, the team formally partitioned the use cases into target MVP deliverables for the Construction phase and secondary capabilities scheduled for subsequent iterations:
+
+| Use Case | Title | Scope Phase | Implementation Rationale |
+| :--- | :--- | :---: | :--- |
+| **UC01** | Create Account | **MVP** | Core identity management and session state via Keycloak. |
+| **UC02** | GitHub Account Connection | **MVP** | Necessary for authenticated analysis of private codebases. |
+| **UC03** | Git Data Tracking | **MVP** | Extracts Git commit, PR, and hygiene dynamics. |
+| **UC04** | Security and Privacy Analysis | **MVP** | Essential engine: AST parsing, automated DFD inference, STRIDE & LINDDUN threat detection. |
+| **UC05** | Git Data & Vulnerability Report | **MVP** | Core exportable deliverable summarizing risks and posture. |
+| **UC06** | Previous Analyses | **MVP** | Longitudinal security tracking across repository commits. |
+| **UC07** | Interactive DFD | **MVP** | Visualizing architectural topology with threat highlighting. |
+| **UC08** | False Positives Management | **MVP** | Mandatory triage mechanism to suppress false alarms. |
+| **UC09** | Adjust DFD (Manual Topology Editing) | **Post-MVP (M4)** | Interactive in-canvas node and flow manipulation deferred to stabilization phase. |
+| **UC10** | AI Assistant (Interactive Chatbot) | **Post-MVP (M4)** | Real-time conversational assistant scheduled for final SLM optimization. |
+| **UC11** | Browser Extension Scanning | **Post-MVP (M4)** | Lightweight client extension integration scheduled for Milestone 4. |
