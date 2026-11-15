@@ -72,6 +72,20 @@ import Link from '@docusaurus/Link';
           <span className="minutes-row__arrow" aria-hidden="true">→</span>
         </Link>
       </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-12">
+          <time dateTime="2026-11-04">2026-11-04</time>
+          <span className="minutes-row__title">Minute 12 — Project Status, MVP Objectives &amp; Task Division</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-13">
+          <time dateTime="2026-11-12">2026-11-12</time>
+          <span className="minutes-row__title">Minute 13 — Weekly Progress, Threat Modeling Frameworks &amp; Advisor Feedback</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
     </ul>
   </section>
 

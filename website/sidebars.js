@@ -63,6 +63,8 @@ const sidebars = {
         'minutes/advisors/minute-09',
         'minutes/advisors/minute-10',
         'minutes/advisors/minute-11',
+        'minutes/advisors/minute-12',
+        'minutes/advisors/minute-13',
       ],
     },
     {
