@@ -86,6 +86,13 @@ import Link from '@docusaurus/Link';
           <span className="minutes-row__arrow" aria-hidden="true">→</span>
         </Link>
       </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-15">
+          <time dateTime="2026-11-18">2026-11-18</time>
+          <span className="minutes-row__title">Minute 15 — Progress Demonstration, DFD Refinement, UI Guidance &amp; Task Distribution</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
     </ul>
   </section>
 
@@ -110,6 +117,13 @@ import Link from '@docusaurus/Link';
         <Link className="minutes-row" to="/docs/minutes/minute-08">
           <time dateTime="2026-10-13">2026-10-13</time>
           <span className="minutes-row__title">Minute 08 — Milestone 2 Presentation Rehearsal</span>
+          <span className="minutes-row__arrow" aria-hidden="true">→</span>
+        </Link>
+      </li>
+      <li>
+        <Link className="minutes-row" to="/docs/minutes/minute-14">
+          <time dateTime="2026-11-17">2026-11-17</time>
+          <span className="minutes-row__title">Minute 14 — Team Workflow, PR Reviews &amp; Task Alignment</span>
           <span className="minutes-row__arrow" aria-hidden="true">→</span>
         </Link>
       </li>
